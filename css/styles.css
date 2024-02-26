@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Meros qilib olish */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #333;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+}
+* {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gold;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.regstration-form {
+
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-close-link {
+  display: flex;
+  align-items: center;
+}
+.header-close-img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.regstration-form-wrapper {
+  position: relative;
+  left: 40px;
+  width: 500px;
+  background-color: #fff;
+  padding: 50px 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+.regstration-form-wrapper-img {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.regstration-form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.regstration-form-group:not(:last-child ) {
+  margin-bottom: 10px;
+}
+.input-form-label {
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.input-form-heading {
+ width: 100%;
+ border: 0;
+ padding-bottom: 5px;
+ border-bottom: 1px solid #555;
+}
+.regstration-form-group-heading {
+  display: flex;
+}
+
+.regstration-form-group-title {
+  width: 50%;
+}
+
+.bio-yourself {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+
+.send-info {
+  display: flex;
+  justify-content: flex-end;
+}
+.cancel-info {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cancel-info:not(:last-child) {
+  margin-right: 10px;
+}
